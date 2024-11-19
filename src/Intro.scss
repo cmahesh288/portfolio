@@ -1,0 +1,59 @@
+.intro-wrapper{
+  display: flex;
+  color: black;
+  justify-content: space-around;
+  height: 80vh;
+
+  .intro-text {
+    max-width: 50%;
+    text-wrap: wrap;
+    margin: 0;
+  }
+
+  .intro-name{
+    font-size: 80px;
+    margin: 0;
+    font-weight: 500;
+  }
+
+  .btn-primary {
+    border-radius: 30px;
+    margin-right: 10px;
+    font-size: 20px;
+    background: #001f3f;
+  }
+
+  .blob{
+    background-image: url("./assets/portfolio.jpg");
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    -webkit-background-position: center;
+    background-position: center center;
+    margin: 20px;
+    box-shadow: 0 5px 5px 5px rgba(13, 110, 253, 0.2);
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+  }
+
+  @keyframes animate {
+    0%, 100%{
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50%{
+      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 1080px) {
+  .intro-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100%;
+  }
+}

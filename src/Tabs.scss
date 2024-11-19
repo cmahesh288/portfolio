@@ -1,0 +1,24 @@
+.tabs-wrapper {
+  color: white;
+  display: inline-flex;
+  list-style: none;
+  font-size: 18px;
+  margin-top: 0.5rem;
+  width: 40%;
+  //font-family: "Poppins", sans-serif;
+
+  justify-content: space-evenly;
+  font-weight: bold;
+
+  .tabs{
+    text-decoration: none;
+    color: white;
+    margin-top: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 1180px) and (min-width:960px) {
+  .tabs-wrapper {
+    width: 50%;
+  }
+}

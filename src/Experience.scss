@@ -1,0 +1,32 @@
+.exp-wrapper{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 10%;
+
+  .exp-header{
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .exp-org{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 1px 25px rgba(0, 0, 0, 0.2);
+    padding: 2.5rem;
+    background-color: #fff;
+    border-radius: 20px;
+  }
+
+  .exp-info{
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .exp-logo{
+    width: 80px;
+    border: 2px solid black;
+    border-radius: 50%;
+  }
+}
