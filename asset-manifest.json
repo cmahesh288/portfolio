@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ded46fc9.css",
+    "main.js": "/static/js/main.cda5b775.js",
+    "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
+    "static/media/road-accident.jpg": "/static/media/road-accident.ea9947a84ff13761afc5.jpg",
+    "static/media/facial expression.jpg": "/static/media/facial expression.e93f08a374f94f56e585.jpg",
+    "static/media/titanic.jpg": "/static/media/titanic.37ea807cb16f688a4a71.jpg",
+    "static/media/face-mask.jpg": "/static/media/face-mask.db8927d99aba5690c5f9.jpg",
+    "static/media/loan.jpg": "/static/media/loan.5843aa13b4f57dda624d.jpg",
+    "static/media/portfolio.jpg": "/static/media/portfolio.25a2a05bdc9d203add0c.jpg",
+    "static/media/house-price.jpg": "/static/media/house-price.5290754c38d7f3b57452.jpg",
+    "static/media/Chandra Mahesh Patwari Resume.pdf": "/static/media/Chandra Mahesh Patwari Resume.a041016d5296b39fb3e5.pdf",
+    "static/media/sastra.jpg": "/static/media/sastra.c9d83c0b7a6574eb5997.jpg",
+    "static/media/tcs.jpg": "/static/media/tcs.36c4641334ddceacab58.jpg",
+    "index.html": "/index.html",
+    "main.ded46fc9.css.map": "/static/css/main.ded46fc9.css.map",
+    "main.cda5b775.js.map": "/static/js/main.cda5b775.js.map",
+    "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ded46fc9.css",
+    "static/js/main.cda5b775.js"
+  ]
+}
