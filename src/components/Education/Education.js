@@ -1,19 +1,23 @@
-import uc from "./assets/uc.png"
-import sastra from "./assets/sastra.jpg"
-import "./Experience.scss"
+import uc from "../../assets/uc.png"
+import sastra from "../../assets/sastra.jpg"
+import "../Experience/Experience.scss"
+import useMediaQuery from "../../util";
 
 
 const Education = () => {
+    const isDesktop = useMediaQuery('(min-width: 768px)');
+
     return (
         <div id={"education"} className={"exp-wrapper"}>
             <h1 className={"exp-header"}>EDUCATION</h1>
             <div className={"exp-org"}>
-                <div>
+                {isDesktop &&  <div>
                     <img src={uc} alt={"tcs logo"} className={"exp-logo"}/>
-                </div>
+                </div>}
                 <div className={"exp-info"}>
-                    <h3>University of Cincinnati</h3>
+                    <h3><b>University of Cincinnati</b></h3>
                     <h5>Master of Engineering, Computer Science</h5>
+                    <h6>August 2024 - Present</h6>
                     <p>Coursework: Advanced Algorithms, Requirements Engineering, Distributed Operating Systems,
                         Software Testing and Quality Assurance</p>
                     <h5>Activities:</h5>
@@ -23,12 +27,13 @@ const Education = () => {
             </div>
 
             <div className={"exp-org"}>
-                <div>
+                {isDesktop && <div>
                     <img src={sastra} alt={"tcs logo"} className={"exp-logo"}/>
-                </div>
+                </div>}
                 <div className={"exp-info"}>
-                    <h3>SASTRA Deemed University</h3>
+                    <h3><b>SASTRA Deemed University</b></h3>
                     <h5>Bachelor of Technology, Mechatronics</h5>
+                    <h6>July 2017-June 2021</h6>
                     <p>Coursework: Artificial Intelligence and Expert Systems, Industrial Robotics, Digital Image
                         Processing, Data Structures through C, Programming through C++, Microprocessors &
                         Microcontrollers.</p>

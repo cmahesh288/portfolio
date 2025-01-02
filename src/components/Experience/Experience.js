@@ -1,7 +1,10 @@
 import "./Experience.scss"
-import tcs from "./assets/tcs.jpg"
+import tcs from "../../assets/tcs.jpg"
+import useMediaQuery from "../../util";
 
 const Experience = () => {
+
+    const isDesktop = useMediaQuery('(min-width: 768px)');
 
     return (
         <section id={"experience"}>
@@ -9,12 +12,13 @@ const Experience = () => {
                 <h1 className={"exp-header"}>EXPERIENCE</h1>
                 <div>
                     <div className={"exp-org"}>
-                        <div>
+                        {isDesktop && <div>
                             <img src={tcs} alt={"tcs logo"} className={"exp-logo"}/>
-                        </div>
+                        </div>}
                         <div className={"exp-info"}>
-                            <h3>Tata Consultancy Services</h3>
-                            <h5>Systems Engineer</h5>
+                            <h3><b>TATA CONSULTANCY SERVICES</b></h3>
+                            <h5><b>Software Engineer</b></h5>
+                            <h6>July 2021 - July 2024</h6>
                             <li>Spearheaded the development and deployment of 5 interactive dashboards using ReactJS for
                                 front-end,
                                 Spring Boot framework for backend and Docker, AWS and GCP for deployment, elevating user
@@ -51,12 +55,13 @@ const Experience = () => {
                         </div>
                     </div>
                     <div className={"exp-org"}>
-                        <div>
+                        {isDesktop && <div>
                             <img src={tcs} alt={"tcs logo"} className={"exp-logo"}/>
-                        </div>
+                        </div>}
                         <div className={"exp-info"}>
-                            <h3>Tata Consultancy Services</h3>
-                            <h5>Software Engineer Intern</h5>
+                            <h3><b>TATA CONSULTANCY SERVICES</b></h3>
+                            <h5><b>Software Engineer Intern</b></h5>
+                            <h6>July 2021 - July 2024</h6>
                             <li>Automated project management processes by designing solutions for employee assignment
                                 and
                                 scheduling, cutting project scheduling time by 30%.

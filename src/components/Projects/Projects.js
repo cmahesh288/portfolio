@@ -1,12 +1,12 @@
 import {Card, ListGroup} from "react-bootstrap";
-import mask from "./assets/face-mask.jpg"
+import mask from "../../assets/face-mask.jpg"
 import {FaGithub} from "react-icons/fa";
 import "./Projects.scss"
-import house from "./assets/house-price.jpg"
-import loan from "./assets/loan.jpg"
-import titanic from "./assets/titanic.jpg"
-import face from "./assets/facial expression.jpg"
-import road from "./assets/road-accident.jpg"
+import house from "../../assets/house-price.jpg"
+import loan from "../../assets/loan.jpg"
+import titanic from "../../assets/titanic.jpg"
+import face from "../../assets/facial expression.jpg"
+import road from "../../assets/road-accident.jpg"
 
 const Projects = () => {
     return (
@@ -27,6 +27,25 @@ const Projects = () => {
                                 severity of an accident with an accuracy of 92%.
                             </li>
                         </Card.Text>
+                        <div className={'tech-icons'}>
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"/>
+
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original-wordmark.svg"/>
+
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original-wordmark.svg"/>
+
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original-wordmark.svg"/>
+
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg"/>
+
+                        </div>
+
+
                     </Card.Body>
                     <Card.Body>
                         <Card.Link href="#"><FaGithub/>Source Code</Card.Link>
@@ -42,6 +61,14 @@ const Projects = () => {
                             Built a face mask detection system using a pre-trained model with 96% accuracy. The
                             architecture used was MobileNetV2 and CAFFE framework was used for detecting face.
                         </Card.Text>
+                        <div className={'tech-icons'}>
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"/>
+
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original-wordmark.svg"/>
+
+                        </div>
                     </Card.Body>
                     <Card.Body>
                         <Card.Link href="#"><FaGithub/>Source Code</Card.Link>
@@ -57,6 +84,23 @@ const Projects = () => {
                             Built a face mask detection system using a pre-trained model with 96% accuracy. The
                             architecture used was MobileNetV2 and CAFFE framework was used for detecting face.
                         </Card.Text>
+                        <div className={'tech-icons'}>
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"/>
+
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original-wordmark.svg"/>
+
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original-wordmark.svg"/>
+
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original-wordmark.svg"/>
+
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg"/>
+
+                        </div>
                     </Card.Body>
                     <Card.Body>
                         <Card.Link href="#"><FaGithub/>Source Code</Card.Link>
@@ -75,6 +119,23 @@ const Projects = () => {
                             Built a face mask detection system using a pre-trained model with 96% accuracy. The
                             architecture used was MobileNetV2 and CAFFE framework was used for detecting face.
                         </Card.Text>
+                        <div className={'tech-icons'}>
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"/>
+
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original-wordmark.svg"/>
+
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original-wordmark.svg"/>
+
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original-wordmark.svg"/>
+
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg"/>
+
+                        </div>
                     </Card.Body>
                     <Card.Body>
                         <Card.Link href="#"><FaGithub/>Source Code</Card.Link>
@@ -90,6 +151,23 @@ const Projects = () => {
                             Built a face mask detection system using a pre-trained model with 96% accuracy. The
                             architecture used was MobileNetV2 and CAFFE framework was used for detecting face.
                         </Card.Text>
+                        <div className={'tech-icons'}>
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"/>
+
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original-wordmark.svg"/>
+
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original-wordmark.svg"/>
+
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original-wordmark.svg"/>
+
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg"/>
+
+                        </div>
                     </Card.Body>
                     <Card.Body>
                         <Card.Link href="#"><FaGithub/>Source Code</Card.Link>
@@ -104,6 +182,23 @@ const Projects = () => {
                             Built a face mask detection system using a pre-trained model with 96% accuracy. The
                             architecture used was MobileNetV2 and CAFFE framework was used for detecting face.
                         </Card.Text>
+                        <div className={'tech-icons'}>
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"/>
+
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original-wordmark.svg"/>
+
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original-wordmark.svg"/>
+
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original-wordmark.svg"/>
+
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg"/>
+
+                        </div>
                     </Card.Body>
                     <Card.Body>
                         <Card.Link href="#"><FaGithub/>Source Code</Card.Link>

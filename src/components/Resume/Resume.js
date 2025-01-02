@@ -1,4 +1,5 @@
-import resume from "./assets/Chandra Mahesh Patwari Resume.pdf";
+// import resume from "../../assets/Chandra Mahesh Patwari Resume.pdf";
+import resume from "../../assets/Chandra_Mahesh_Patwari_Resume.pdf"
 import "./Resume.scss"
 
 const Resume = () => {

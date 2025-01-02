@@ -17,6 +17,12 @@
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .tabs{
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 1180px) and (min-width:960px) {
   .tabs-wrapper {
     width: 50%;

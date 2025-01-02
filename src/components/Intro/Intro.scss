@@ -30,7 +30,7 @@
   }
 
   .blob{
-    background-image: url("../assets/portfolio.jpg");
+    background-image: url("../../assets/portfolio.jpg");
     width: 250px;
     height: 250px;
     background-size: cover;
@@ -54,12 +54,21 @@
 
 
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 768px) {
   .intro-wrapper {
+    padding-top: 20%;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
     height: 100%;
+
+    .intro-name{
+      font-size: 50px;
+      margin: 0;
+      font-weight: 500;
+    }
   }
+
+
 }

@@ -1,9 +1,9 @@
 import "./Home.scss"
-import Intro from "./Intro/Intro";
-import Resume from "./Resume";
-import Experience from "./Experience";
-import Education from "./Education";
-import Projects from "./Projects";
+import Intro from "../Intro/Intro";
+import Resume from "../Resume/Resume";
+import Experience from "../Experience/Experience";
+import Education from "../Education/Education";
+import Projects from "../Projects/Projects";
 
 const Home = () => {
 

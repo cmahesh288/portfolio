@@ -1,0 +1,41 @@
+.project-wrapper {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 10%;
+
+  .project-header {
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .project-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr
+  }
+
+  .card {
+    margin: 5px;
+    position: inherit;
+
+    .tech-icons {
+      img {
+        background: beige;
+        padding: 2px;
+        margin: 2px;
+        height: 60px;
+        width: auto;
+        border-radius: 10%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .project-wrapper {
+    .project-wrap {
+      display: grid;
+      grid-template-columns: auto;
+    }
+  }
+}
