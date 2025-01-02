@@ -1,29 +1,61 @@
 .tabs-wrapper {
-  color: white;
-  display: inline-flex;
-  list-style: none;
-  font-size: 18px;
-  margin-top: -0.25rem;
   width: 40%;
-  //font-family: "Poppins", sans-serif;
 
-  justify-content: space-evenly;
-  font-weight: bold;
-
-  .tabs{
-    text-decoration: none;
+  .tabs-nav {
     color: white;
-    margin-top: 1.5rem;
+    display: inline-flex;
+    list-style: none;
+    font-size: 18px;
+    margin-top: -0.25rem;
+    width: 100%;
+    //font-family: "Poppins", sans-serif;
+
+    justify-content: space-evenly;
+    font-weight: bold;
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .tabs{
-    display: none;
-  }
+.tabs {
+  text-decoration: none;
+  color: white;
+  margin-top: 1.5rem;
 }
 
-@media only screen and (max-width: 1180px) and (min-width:960px) {
+.tabs-small-wrapper {
+  color: white;
+
+  .hamburger {
+    height: 40px;
+    margin: 10px;
+    width: auto;
+    cursor: pointer;
+  }
+
+  .tabs-menu {
+    list-style: none;
+    font-size: 18px;
+    margin-top: -0.25rem;
+    justify-content: space-evenly;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    position: fixed;
+    background: #001f3f;
+    height: 50%;
+    z-index: 1;
+  }
+
+}
+
+//@media only screen and (max-width: 768px) {
+//  .tabs{
+//    display: none;
+//  }
+//}
+
+@media only screen and (max-width: 1180px) and (min-width: 960px) {
   .tabs-wrapper {
     width: 50%;
   }

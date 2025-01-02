@@ -4,8 +4,11 @@ import {Button} from "react-bootstrap";
 import {GiGraduateCap} from "react-icons/gi";
 import {FaLocationDot} from "react-icons/fa6";
 import {FaUniversity} from "react-icons/fa";
+import useMediaQuery from "../../util";
 
 const Intro = () => {
+    const isDesktop = useMediaQuery('(min-width: 768px)');
+
     return (
         <div className={"intro-wrapper"}>
             <div className={"intro-text"}>
@@ -25,7 +28,8 @@ const Intro = () => {
                     wrapper="span"
                     speed={45}
                     deletionSpeed={20}
-                    style={{fontSize: '3em', display: 'inline-block'}}
+                    style={{fontSize: isDesktop ? '3em' : '1em', fontWeight: isDesktop ? 300 : 600,
+                        marginBottom: isDesktop ? 0 : '10px', display: 'inline-block'}}
                     repeat={Infinity}
                 />
                 <p>
@@ -43,11 +47,11 @@ const Intro = () => {
             </div>
             <div className={'intro-details'}>
                 <div className={"blob"}></div>
-                <div>
+                {isDesktop && <div>
                     <h6><GiGraduateCap/> Master of Engineering in Computer Science</h6>
                     <h6><FaUniversity/> University of Cincinnati</h6>
                     <h6><FaLocationDot/> Cincinnati, OH</h6>
-                </div>
+                </div> }
             </div>
         </div>
     )
