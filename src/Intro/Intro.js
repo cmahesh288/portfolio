@@ -1,6 +1,9 @@
 import "./Intro.scss"
 import {TypeAnimation} from "react-type-animation";
 import {Button} from "react-bootstrap";
+import {GiGraduateCap} from "react-icons/gi";
+import {FaLocationDot} from "react-icons/fa6";
+import {FaUniversity} from "react-icons/fa";
 
 const Intro = () => {
     return (
@@ -26,8 +29,8 @@ const Intro = () => {
                     repeat={Infinity}
                 />
                 <p>
-                    Software Engineer with over <b>3 years of experience</b> in a wide range of programming languages,
-                    frameworks, and tools including <b>Java, ReactJS, Spring Boot, Kubernetes, Docker</b>, and more.
+                    Software Engineer with over <mark><b>3 years of experience</b></mark> in a wide range of programming languages,
+                    frameworks, and tools including <mark><b>Java, ReactJS, Spring Boot, Kubernetes, Docker</b></mark>, and more.
                     Seeking a challenging role to leverage my technical skills, problem-solving abilities, and soft
                     skills to contribute effectively to a dynamic team and deliver innovative solutions in a
                     collaborative environment.
@@ -38,7 +41,14 @@ const Intro = () => {
                 <a href={"#resume"}><Button>Resume</Button></a>
 
             </div>
-            <div className={"blob"}></div>
+            <div className={'intro-details'}>
+                <div className={"blob"}></div>
+                <div>
+                    <h6><GiGraduateCap/> Master of Engineering in Computer Science</h6>
+                    <h6><FaUniversity/> University of Cincinnati</h6>
+                    <h6><FaLocationDot/> Cincinnati, OH</h6>
+                </div>
+            </div>
         </div>
     )
 }

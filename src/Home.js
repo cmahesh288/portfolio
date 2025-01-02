@@ -1,5 +1,5 @@
 import "./Home.scss"
-import Intro from "./Intro";
+import Intro from "./Intro/Intro";
 import Resume from "./Resume";
 import Experience from "./Experience";
 import Education from "./Education";

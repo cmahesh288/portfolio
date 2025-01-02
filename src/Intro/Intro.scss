@@ -1,13 +1,19 @@
 .intro-wrapper{
   display: flex;
-  color: black;
+  //color: black;
   justify-content: space-around;
-  height: 80vh;
+  //height: 80vh;
 
   .intro-text {
     max-width: 50%;
     text-wrap: wrap;
     margin: 0;
+  }
+
+  .intro-details{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
   }
 
   .intro-name{
@@ -24,9 +30,9 @@
   }
 
   .blob{
-    background-image: url("./assets/portfolio.jpg");
-    width: 400px;
-    height: 400px;
+    background-image: url("../assets/portfolio.jpg");
+    width: 250px;
+    height: 250px;
     background-size: cover;
     -webkit-background-position: center;
     background-position: center center;
