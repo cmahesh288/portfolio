@@ -6,9 +6,13 @@ const Resume = () => {
     return(
         <div id="resume" className={"resume-wrapper"}>
             <h1 className={"resume-header"}>RESUME</h1>
-            <embed className="pdf"
-                   src={resume}
-                   height="800"/>
+            <object
+                data={resume}
+                width="100%" height="100%">
+            <p>Your web browser doesn't have a PDF plugin.
+                Instead you can <a href="../../assets/Chandra_Mahesh_Patwari_Resume.pdf">click here to
+                    download the PDF file.</a></p>
+            </object>
         </div>
     )
 }
