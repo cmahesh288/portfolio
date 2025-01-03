@@ -31,6 +31,15 @@
     cursor: pointer;
   }
 
+  .close-icon {
+    position: fixed;
+    height: 30px;
+    width: auto;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
   .tabs-menu {
     list-style: none;
     font-size: 18px;
