@@ -2,16 +2,19 @@ import uc from "../../assets/uc.png"
 import sastra from "../../assets/sastra.jpg"
 import "../Experience/Experience.scss"
 import useMediaQuery from "../../util";
+import {useContext} from "react";
+import {GLOBAL_CONTEXT} from "../../App";
 
 
 const Education = () => {
     const isDesktop = useMediaQuery('(min-width: 768px)');
+    const {isDarkMode, setIsDarkMode} = useContext(GLOBAL_CONTEXT)
 
     return (
         <div id={"education"} className={"exp-wrapper"}>
             <h1 className={"exp-header"}>EDUCATION</h1>
-            <div className={"exp-org"}>
-                {isDesktop &&  <div>
+            <div className={`${isDarkMode} exp-org`}>
+                {isDesktop && <div>
                     <img src={uc} alt={"tcs logo"} className={"exp-logo"}/>
                 </div>}
                 <div className={"exp-info"}>
@@ -26,7 +29,7 @@ const Education = () => {
                 </div>
             </div>
 
-            <div className={"exp-org"}>
+            <div className={`${isDarkMode} exp-org`}>
                 {isDesktop && <div>
                     <img src={sastra} alt={"tcs logo"} className={"exp-logo"}/>
                 </div>}

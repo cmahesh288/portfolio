@@ -1,17 +1,20 @@
 import "./Experience.scss"
 import tcs from "../../assets/tcs.jpg"
 import useMediaQuery from "../../util";
+import {useContext} from "react";
+import {GLOBAL_CONTEXT} from "../../App";
 
 const Experience = () => {
 
     const isDesktop = useMediaQuery('(min-width: 768px)');
+    const {isDarkMode, setIsDarkMode} = useContext(GLOBAL_CONTEXT)
 
     return (
         <section id={"experience"}>
             <div className={"exp-wrapper"}>
                 <h1 className={"exp-header"}>EXPERIENCE</h1>
                 <div>
-                    <div className={"exp-org"}>
+                    <div className={`${isDarkMode} exp-org`}>
                         {isDesktop && <div>
                             <img src={tcs} alt={"tcs logo"} className={"exp-logo"}/>
                         </div>}
@@ -54,7 +57,7 @@ const Experience = () => {
                             </li>
                         </div>
                     </div>
-                    <div className={"exp-org"}>
+                    <div className={`${isDarkMode} exp-org`}>
                         {isDesktop && <div>
                             <img src={tcs} alt={"tcs logo"} className={"exp-logo"}/>
                         </div>}

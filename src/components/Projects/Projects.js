@@ -7,13 +7,16 @@ import loan from "../../assets/loan.jpg"
 import titanic from "../../assets/titanic.jpg"
 import face from "../../assets/facial expression.jpg"
 import road from "../../assets/road-accident.jpg"
+import {useContext} from "react";
+import {GLOBAL_CONTEXT} from "../../App";
 
 const Projects = () => {
-    return (
-        <div id={"projects"} className={"project-wrapper"}>
+    const {isDarkMode, setIsDarkMode} = useContext(GLOBAL_CONTEXT)
+
+    return (<div id={"projects"} className={"project-wrapper"}>
             <h1 className={"project-header"}>PROJECTS</h1>
             <div className={"project-wrap"}>
-                <Card>
+                <Card bg={isDarkMode === 'dark' ? 'secondary' : ''}>
                     <Card.Img variant="top" src={road}/>
                     <Card.Body>
                         <Card.Title>Road accident severity prediction and analysis</Card.Title>
@@ -52,8 +55,7 @@ const Projects = () => {
                         <Card.Link href="#">Demo</Card.Link>
                     </Card.Body>
                 </Card>
-
-                <Card>
+                <Card bg={isDarkMode === 'dark' ? 'secondary' : ''}>
                     <Card.Img variant="top" src={mask} width={500}/>
                     <Card.Body>
                         <Card.Title>Face Mask Detection</Card.Title>
@@ -75,8 +77,7 @@ const Projects = () => {
                         <Card.Link href="#">Demo</Card.Link>
                     </Card.Body>
                 </Card>
-
-                <Card>
+                <Card bg={isDarkMode === 'dark' ? 'secondary' : ''}>
                     <Card.Img variant="top" src={house}/>
                     <Card.Body>
                         <Card.Title>House Price Prediction</Card.Title>
@@ -107,11 +108,9 @@ const Projects = () => {
                         <Card.Link href="#">Demo</Card.Link>
                     </Card.Body>
                 </Card>
-
-
             </div>
             <div className={"project-wrap"}>
-                <Card>
+                <Card bg={isDarkMode === 'dark' ? 'secondary' : ''}>
                     <Card.Img variant="top" src={titanic} width={500}/>
                     <Card.Body>
                         <Card.Title>Titanic Survivor Prediction</Card.Title>
@@ -142,8 +141,7 @@ const Projects = () => {
                         <Card.Link href="#">Demo</Card.Link>
                     </Card.Body>
                 </Card>
-
-                <Card>
+                <Card bg={isDarkMode === 'dark' ? 'secondary' : ''}>
                     <Card.Img variant="top" src={face}/>
                     <Card.Body>
                         <Card.Title>Facial Expression Recognition</Card.Title>
@@ -174,7 +172,7 @@ const Projects = () => {
                         <Card.Link href="#">Demo</Card.Link>
                     </Card.Body>
                 </Card>
-                <Card>
+                <Card bg={isDarkMode === 'dark' ? 'secondary' : ''}>
                     <Card.Img variant="top" src={loan}/>
                     <Card.Body>
                         <Card.Title>Loan Status Prediction</Card.Title>
@@ -209,8 +207,7 @@ const Projects = () => {
 
             </div>
 
-        </div>
-    )
+        </div>)
 }
 
 export default Projects

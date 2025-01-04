@@ -5,9 +5,12 @@ import {GiGraduateCap} from "react-icons/gi";
 import {FaLocationDot} from "react-icons/fa6";
 import {FaUniversity} from "react-icons/fa";
 import useMediaQuery from "../../util";
+import {useContext} from "react";
+import {GLOBAL_CONTEXT} from "../../App";
 
 const Intro = () => {
     const isDesktop = useMediaQuery('(min-width: 768px)');
+    const {isDarkMode, setIsDarkMode} = useContext(GLOBAL_CONTEXT)
 
     return (
         <div className={"intro-wrapper"}>
@@ -28,30 +31,43 @@ const Intro = () => {
                     wrapper="span"
                     speed={45}
                     deletionSpeed={20}
-                    style={{fontSize: isDesktop ? '3em' : '1em', fontWeight: isDesktop ? 300 : 600,
-                        marginBottom: isDesktop ? 0 : '10px', display: 'inline-block'}}
+                    style={{
+                        fontSize: isDesktop ? '3em' : '1em', fontWeight: isDesktop ? 300 : 600,
+                        marginBottom: isDesktop ? 0 : '10px', display: 'inline-block'
+                    }}
                     repeat={Infinity}
                 />
                 <p>
-                    Software Engineer with over <mark><b>3 years of experience</b></mark> in a wide range of programming languages,
-                    frameworks, and tools including <mark><b>Java, ReactJS, Spring Boot, Kubernetes, Docker</b></mark>, and more.
+                    Software Engineer with over <mark><b>3 years of experience</b></mark> in a wide range of programming
+                    languages,
+                    frameworks, and tools including <mark><b>Java, ReactJS, Spring Boot, Kubernetes, Docker</b></mark>,
+                    and more.
                     Seeking a challenging role to leverage my technical skills, problem-solving abilities, and soft
                     skills to contribute effectively to a dynamic team and deliver innovative solutions in a
                     collaborative environment.
                 </p>
                 <a href={"https://www.linkedin.com/in/chandra-mahesh-patwari/"}
                    rel="noreferrer"
-                   target={"_blank"}><Button>LinkedIn</Button></a>
-                <a href={"#resume"}><Button>Resume</Button></a>
+                   target={"_blank"}><Button
+                    style={{
+                        background: isDarkMode ? '#d9d9d9' : '#001f3f',
+                        borderColor: isDarkMode ? '#d9d9d9' : '#001f3f',
+                        color: isDarkMode ? '#001f3f' : '#d9d9d9'
+                    }}>LinkedIn</Button></a>
+                <a href={"#resume"}><Button style={{
+                    background: isDarkMode ? '#d9d9d9' : '#001f3f',
+                    borderColor: isDarkMode ? '#d9d9d9' : '#001f3f',
+                    color: isDarkMode ? '#001f3f' : '#d9d9d9'
+                }}>Resume</Button></a>
 
             </div>
             <div className={'intro-details'}>
-                <div className={"blob"}></div>
+                <div className={`${isDarkMode} blob`}></div>
                 {isDesktop && <div>
                     <h6><GiGraduateCap/> Master of Engineering in Computer Science</h6>
                     <h6><FaUniversity/> University of Cincinnati</h6>
                     <h6><FaLocationDot/> Cincinnati, OH</h6>
-                </div> }
+                </div>}
             </div>
         </div>
     )

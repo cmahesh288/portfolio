@@ -1,13 +1,14 @@
 import "./Socials.scss"
 import {DarkModeSwitch} from "react-toggle-dark-mode";
-import {useState} from "react";
+import {useContext, useState} from "react";
 import {GiHamburgerMenu} from "react-icons/gi";
+import {GLOBAL_CONTEXT} from "../../App";
 
 const Socials = () => {
-    const [isDarkMode, setDarkMode] = useState(true);
+    const {isDarkMode, setIsDarkMode} = useContext(GLOBAL_CONTEXT)
 
     const toggleDarkMode = (checked) => {
-        setDarkMode(checked);
+        setIsDarkMode(isDarkMode === 'dark' ? '' : 'dark');
     };
     return(
         <>
@@ -50,7 +51,7 @@ const Socials = () => {
                 <li>
                     <DarkModeSwitch
                         className={"switch"}
-                        checked={isDarkMode}
+                        checked={isDarkMode !== 'dark'}
                         onChange={toggleDarkMode}
                         size={120}/>
                 </li>
