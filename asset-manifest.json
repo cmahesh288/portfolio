@@ -1,25 +1,28 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.dbf6f706.css",
-    "main.js": "/portfolio/static/js/main.41942ae4.js",
+    "main.css": "/portfolio/static/css/main.2f5867f4.css",
+    "main.js": "/portfolio/static/js/main.deaf9a1b.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
     "static/media/road-accident.jpg": "/portfolio/static/media/road-accident.ea9947a84ff13761afc5.jpg",
     "static/media/facial expression.jpg": "/portfolio/static/media/facial expression.e93f08a374f94f56e585.jpg",
     "static/media/titanic.jpg": "/portfolio/static/media/titanic.37ea807cb16f688a4a71.jpg",
     "static/media/face-mask.jpg": "/portfolio/static/media/face-mask.db8927d99aba5690c5f9.jpg",
     "static/media/loan.jpg": "/portfolio/static/media/loan.5843aa13b4f57dda624d.jpg",
+    "static/media/chrome-extension.jpg": "/portfolio/static/media/chrome-extension.65d8f64936ecc8f30a4a.jpg",
     "static/media/portfolio.jpg": "/portfolio/static/media/portfolio.25a2a05bdc9d203add0c.jpg",
+    "static/media/portfolio-cover.jpg": "/portfolio/static/media/portfolio-cover.df2f8d4ab5463ad6441d.jpg",
+    "static/media/flask.jpg": "/portfolio/static/media/flask.3e644aabc53f1cfdb5f6.jpg",
     "static/media/house-price.jpg": "/portfolio/static/media/house-price.5290754c38d7f3b57452.jpg",
     "static/media/Chandra_Mahesh_Patwari_Resume.pdf": "/portfolio/static/media/Chandra_Mahesh_Patwari_Resume.591b1ab8556b761e4d10.pdf",
     "static/media/sastra.jpg": "/portfolio/static/media/sastra.c9d83c0b7a6574eb5997.jpg",
     "static/media/tcs.jpg": "/portfolio/static/media/tcs.36c4641334ddceacab58.jpg",
     "index.html": "/portfolio/index.html",
-    "main.dbf6f706.css.map": "/portfolio/static/css/main.dbf6f706.css.map",
-    "main.41942ae4.js.map": "/portfolio/static/js/main.41942ae4.js.map",
+    "main.2f5867f4.css.map": "/portfolio/static/css/main.2f5867f4.css.map",
+    "main.deaf9a1b.js.map": "/portfolio/static/js/main.deaf9a1b.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dbf6f706.css",
-    "static/js/main.41942ae4.js"
+    "static/css/main.2f5867f4.css",
+    "static/js/main.deaf9a1b.js"
   ]
 }
