@@ -8,6 +8,7 @@ import {useContext} from "react";
 import {GLOBAL_CONTEXT} from "../../App";
 import {Button} from "react-bootstrap";
 import {FaHeart} from "react-icons/fa";
+import Skills from "../Skills/Skills";
 
 const Home = () => {
     const {isDarkMode, setIsDarkMode} = useContext(GLOBAL_CONTEXT)
@@ -17,9 +18,10 @@ const Home = () => {
             <Intro/>
             {/*<Resume/>*/}
             <Experience/>
+            <Skills/>
             <Education/>
             <Projects/>
-            <Resume/>
+            {/*<Resume/>*/}
             <div className={'footer'}><h6>Made with <FaHeart fill={'red'}/> by Chandra</h6></div>
         </div>
     )

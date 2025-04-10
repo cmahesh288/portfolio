@@ -31,7 +31,9 @@ const Tabs = () => {
                 <a onClick={() => {
                     setShowTabs(false)
                 }} href={"#projects"} className={"tabs"}>PROJECTS</a>
-                <a href={"../../assets/Chandra_Mahesh_Patwari_Resume.pdf"} target={"_blank"} className={"tabs"}>RESUME</a>
+                <a onClick={() => {
+                    setShowTabs(false)
+                }} href={"https://drive.google.com/file/d/1Lq1-VLFcnCmX-ykqHpEXxI__YDER8xHN/view?usp=sharing"} target={'_blank'} className={"tabs"}>RESUME</a>
             </div>}
         </div>
     )

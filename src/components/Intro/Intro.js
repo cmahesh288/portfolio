@@ -38,9 +38,9 @@ const Intro = () => {
                     repeat={Infinity}
                 />
                 <p>
-                    Software Engineer with over <mark><b>3 years of experience</b></mark> in a wide range of programming
+                    Software Engineer with over <mark><b>3.5 years of experience</b></mark> in a wide range of programming
                     languages,
-                    frameworks, and tools including <mark><b>Java, ReactJS, Spring Boot, Kubernetes, Docker</b></mark>,
+                    frameworks, and tools including <mark><b>Java, Python, ReactJS, Spring Boot, Kubernetes, Docker</b></mark>,
                     and more.
                     Seeking a challenging role to leverage my technical skills, problem-solving abilities, and soft
                     skills to contribute effectively to a dynamic team and deliver innovative solutions in a
@@ -54,7 +54,7 @@ const Intro = () => {
                         borderColor: isDarkMode ? '#d9d9d9' : '#001f3f',
                         color: isDarkMode ? '#001f3f' : '#d9d9d9'
                     }}>LinkedIn</Button></a>
-                <a href={"#resume"}><Button style={{
+                <a href={"https://drive.google.com/file/d/1Lq1-VLFcnCmX-ykqHpEXxI__YDER8xHN/view?usp=sharing"} target={'_blank'}><Button style={{
                     background: isDarkMode ? '#d9d9d9' : '#001f3f',
                     borderColor: isDarkMode ? '#d9d9d9' : '#001f3f',
                     color: isDarkMode ? '#001f3f' : '#d9d9d9'

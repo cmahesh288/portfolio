@@ -1,5 +1,6 @@
 import "./Experience.scss"
 import tcs from "../../assets/tcs.jpg"
+import uc from "../../assets/uc.png"
 import useMediaQuery from "../../util";
 import {useContext} from "react";
 import {GLOBAL_CONTEXT} from "../../App";
@@ -16,45 +17,53 @@ const Experience = () => {
                 <div>
                     <div className={`${isDarkMode} exp-org`}>
                         {isDesktop && <div>
+                            <img src={uc} alt={"UC logo"} className={"exp-logo"}/>
+                        </div>}
+                        <div className={"exp-info"}>
+                            <h3><b>UNIVERSITY OF CINCINNATI</b></h3>
+                            <h5><b>Backend Software Engineer - Volunteer</b></h5>
+                            <h6>Jan 2025 - Present</h6>
+                            <li>Built an ICU patient monitoring dashboard, integrating EHR data for real-time insights on 299K+ patients, improving data
+                                accessibility using PowerBI.
+                            </li>
+                            <li>Engineered scalable data pipelines to process large datasets, reducing query response time by 30%.
+                            </li>
+                            <li>Developed advanced filtering, sorting, and visualization features, enhancing researcher efficiency by 25%.
+                            </li>
+                        </div>
+                    </div>
+                    <div className={`${isDarkMode} exp-org`}>
+                        {isDesktop && <div>
                             <img src={tcs} alt={"tcs logo"} className={"exp-logo"}/>
                         </div>}
                         <div className={"exp-info"}>
                             <h3><b>TATA CONSULTANCY SERVICES</b></h3>
                             <h5><b>Software Engineer</b></h5>
                             <h6>July 2021 - July 2024</h6>
-                            <li>Spearheaded the development and deployment of 5 interactive dashboards using ReactJS for
-                                front-end,
-                                Spring Boot framework for backend and Docker, AWS and GCP for deployment, elevating user
-                                engagement
-                                by
-                                showcasing key metrics and increasing the visibility by 50%.
+                            <li>Delivered and deployed 5 interactive dashboards using ReactJS and Spring Boot, enhancing
+                                data visualization and user engagement
+                                by 50%.
                             </li>
-                            <li> Developed a scalable microservices architecture using Spring Boot, implementing REST
-                                APIs
-                                that
-                                streamlined inter-service communication and improved scheduling efficiency, reducing API
-                                response
-                                time
-                                by 35% and enabling 30% faster data processing across distributed services.
+                            <li> Designed scalable microservices with Spring Boot and REST APIs, reducing API response
+                                time by 35% and accelerating data
+                                processing by 30%.
                             </li>
-                            <li>Developed a Network Intrusion Detection System by establishing a robust data pipeline by
-                                leveraging
-                                AWS
-                                Kinesis streams to ingest and process data from the source, utilizing Java and Drools
-                                rule
-                                engine,
-                                significantly reducing data processing time by 50%.
+                            <li>Devised a Network Intrusion Detection System with AWS Kinesis and Java, integrating
+                                Drools to cut data processing time by 50%.
                             </li>
-                            <li>Implemented data parsing and persistence from Amazon Kinesis data streams to MongoDB,
-                                enabling
-                                effective
-                                storage and retrieval of processed data.
+                            <li>Implemented DevOps practices and optimized CI/CD pipelines with Jenkins, Docker, and
+                                Kubernetes, improving deployment
+                                efficiency by 30%.
                             </li>
-                            <li>Provided valuable technical support for an internally developed IntelliJ plugin,
-                                enhancing
-                                productivity
-                                and usability for the team, and successfully resolved 100% of reported issues.
+                            <li>Enabled real-time MongoDB data persistence from Amazon Kinesis, enhancing analytics
+                                capabilities and reducing data latency by
+                                25%.
                             </li>
+                            <li>Collaborated in Agile methodology teams to solve complex challenges, ensuring 100% on
+                                time software delivery through effective
+                                communication.
+                            </li>
+
                         </div>
                     </div>
                     <div className={`${isDarkMode} exp-org`}>
@@ -65,14 +74,15 @@ const Experience = () => {
                             <h3><b>TATA CONSULTANCY SERVICES</b></h3>
                             <h5><b>Software Engineer Intern</b></h5>
                             <h6>July 2021 - July 2024</h6>
-                            <li>Automated project management processes by designing solutions for employee assignment
-                                and
-                                scheduling, cutting project scheduling time by 30%.
+                            <li>Designed automated employee assignment and scheduling solutions, reducing project
+                                scheduling time by 30%.
                             </li>
-                            <li>Applied Mixed Integer Linear and Non-Linear Programming (MILP/MINLP) concepts to
-                                optimize
-                                complex
-                                assignment and scheduling challenges.
+                            <li>Tackled complex scheduling challenges using Mixed Integer Linear and Non-Linear
+                                Programming (MILP/MINLP) reducing
+                                scheduling conflicts by 40%.
+                            </li>
+                            <li>Improved resource allocation efficiency, boosting workforce utilization by 25% and
+                                project delivery timelines.
                             </li>
                         </div>
                     </div>
