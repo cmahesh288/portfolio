@@ -2,14 +2,11 @@ import {Card, ListGroup} from "react-bootstrap";
 import mask from "../../assets/face-mask.jpg"
 import {FaGithub} from "react-icons/fa";
 import "./Projects.scss"
-import house from "../../assets/house-price.jpg"
-import loan from "../../assets/loan.jpg"
-import titanic from "../../assets/titanic.jpg"
-import face from "../../assets/facial expression.jpg"
 import road from "../../assets/road-accident.jpg"
 import flask from "../../assets/flask.jpg"
 import chrome from "../../assets/chrome-extension.jpg"
 import portfolio from "../../assets/portfolio-cover.jpg"
+import notes from "../../assets/notes.jpg"
 import {useContext} from "react";
 import {GLOBAL_CONTEXT} from "../../App";
 
@@ -19,6 +16,35 @@ const Projects = () => {
     return (<div id={"projects"} className={"project-wrapper"}>
             <h1 className={"project-header"}>PROJECTS</h1>
             <div className={"project-wrap"}>
+                <Card bg={isDarkMode === 'dark' ? 'secondary' : ''}>
+                    <Card.Img variant="top" src={notes}/>
+                    <Card.Body>
+                        <Card.Title>QuickNotes</Card.Title>
+                        <Card.Text>
+                            Built a note taking web application using MERN stack and deployed it using Vercel.
+                        </Card.Text>
+                        <div className={'tech-icons'}>
+
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg"/>
+
+
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"/>
+
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"/>
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"/>
+
+
+                        </div>
+                    </Card.Body>
+                    <Card.Body>
+                        <Card.Link href="https://github.com/cmahesh288/quicknotes" target={"_blank"}>Source Code</Card.Link>
+                        <Card.Link href="https://quicknotes-frontend-tau.vercel.app/" target={"_blank"}>Demo</Card.Link>
+                    </Card.Body>
+                </Card>
                 <Card bg={isDarkMode === 'dark' ? 'secondary' : ''}>
                     <Card.Img variant="top" src={chrome}/>
                     <Card.Body>
@@ -45,29 +71,6 @@ const Projects = () => {
                     <Card.Body>
                         <Card.Link href="https://github.com/cmahesh288/yt-insta-shorts-blocker" target={"_blank"}>Source code</Card.Link>
                         <Card.Link href="https://www.linkedin.com/posts/chandra-mahesh-patwari_code-chromeextension-instagram-activity-7301086772111847424-Aa_O?utm_source=share&utm_medium=member_desktop&rcm=ACoAACUgrCcBpJ1NVGzas12lBwzDec5H68DtACQ" target={"_blank"}>Demo</Card.Link>
-                    </Card.Body>
-                </Card>
-                <Card bg={isDarkMode === 'dark' ? 'secondary' : ''}>
-                    <Card.Img variant="top" src={flask}/>
-                    <Card.Body>
-                        <Card.Title>Flask application</Card.Title>
-                        <Card.Text>
-                            Built a flask application to enable user authentication. The application was hosted on AWS EC2.
-                        </Card.Text>
-                        <div className={'tech-icons'}>
-                            <img
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"/>
-
-                            <img
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg"/>
-
-                            <img
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"/>
-
-                        </div>
-                    </Card.Body>
-                    <Card.Body>
-                        <Card.Link href="https://github.com/cmahesh288/aws_flask_app" target={"_blank"}><FaGithub/>Source Code</Card.Link>
                     </Card.Body>
                 </Card>
                 <Card bg={isDarkMode === 'dark' ? 'secondary' : ''}>
@@ -99,18 +102,36 @@ const Projects = () => {
             </div>
             <div className={"project-wrap"}>
                 <Card bg={isDarkMode === 'dark' ? 'secondary' : ''}>
+                    <Card.Img variant="top" src={flask}/>
+                    <Card.Body>
+                        <Card.Title>Flask application</Card.Title>
+                        <Card.Text>
+                            Built a flask application to enable user authentication. The application was hosted on AWS EC2.
+                        </Card.Text>
+                        <div className={'tech-icons'}>
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"/>
+
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg"/>
+
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"/>
+
+                        </div>
+                    </Card.Body>
+                    <Card.Body>
+                        <Card.Link href="https://github.com/cmahesh288/aws_flask_app" target={"_blank"}>Source Code</Card.Link>
+                    </Card.Body>
+                </Card>
+                <Card bg={isDarkMode === 'dark' ? 'secondary' : ''}>
                     <Card.Img variant="top" src={road}/>
                     <Card.Body>
                         <Card.Title>Road accident severity prediction and analysis</Card.Title>
                         <Card.Text>
-                            <li>Analyzed the different factors responsible for a road accident and how the severity of a
+                            Analyzed the different factors responsible for a road accident and how the severity of a
                                 road accident depends on these factors, visualized the data using matplotlib and seaborn
                                 libraries.
-                            </li>
-                            <li>Used various classification techniques like KNN, Naïve Bayes, Decision tree, Logistic
-                                regression, Random Forest and a boosting algorithm called XG Boost for predicting the
-                                severity of an accident with an accuracy of 92%.
-                            </li>
                         </Card.Text>
                         <div className={'tech-icons'}>
                             <img
@@ -153,7 +174,7 @@ const Projects = () => {
                         </div>
                     </Card.Body>
                     <Card.Body>
-                        <Card.Link href="https://github.com/cmahesh288/Face-Mask-Detection" target={"_blank"}><FaGithub/>Source Code</Card.Link>
+                        <Card.Link href="https://github.com/cmahesh288/Face-Mask-Detection" target={"_blank"}>Source Code</Card.Link>
                         <Card.Link href="https://www.linkedin.com/posts/chandra-mahesh-patwari_transferlearning-deeplearning-cnn-activity-6720984772711084032-xGnY?utm_source=share&utm_medium=member_desktop&rcm=ACoAACUgrCcBpJ1NVGzas12lBwzDec5H68DtACQ" target={"_blank"}>Demo</Card.Link>
                     </Card.Body>
                 </Card>
@@ -184,7 +205,7 @@ const Projects = () => {
                 {/*        </div>*/}
                 {/*    </Card.Body>*/}
                 {/*    <Card.Body>*/}
-                {/*        <Card.Link href="#"><FaGithub/>Source Code</Card.Link>*/}
+                {/*        <Card.Link href="#">Source Code</Card.Link>*/}
                 {/*        <Card.Link href="#">Demo</Card.Link>*/}
                 {/*    </Card.Body>*/}
                 {/*</Card>*/}
@@ -215,7 +236,7 @@ const Projects = () => {
                 {/*        </div>*/}
                 {/*    </Card.Body>*/}
                 {/*    <Card.Body>*/}
-                {/*        <Card.Link href="#"><FaGithub/>Source Code</Card.Link>*/}
+                {/*        <Card.Link href="#">Source Code</Card.Link>*/}
                 {/*        <Card.Link href="#">Demo</Card.Link>*/}
                 {/*    </Card.Body>*/}
                 {/*</Card>*/}
@@ -246,7 +267,7 @@ const Projects = () => {
                 {/*        </div>*/}
                 {/*    </Card.Body>*/}
                 {/*    <Card.Body>*/}
-                {/*        <Card.Link href="#"><FaGithub/>Source Code</Card.Link>*/}
+                {/*        <Card.Link href="#">Source Code</Card.Link>*/}
                 {/*        <Card.Link href="#">Demo</Card.Link>*/}
                 {/*    </Card.Body>*/}
                 {/*</Card>*/}
